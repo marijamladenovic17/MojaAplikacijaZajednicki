@@ -27,5 +27,6 @@ public class Operacije {
      public  static final int DA_LI_POSTOJI_KOMISIJA=15;
      public  static final int VRATI_MAX_ID_KARTONA=16;
      public  static final int VRATI_GRUPU_ZADATKA=17;
+     public  static final int SACUVAJ_KARTON=18;
      
 }

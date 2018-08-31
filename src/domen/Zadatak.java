@@ -20,10 +20,10 @@ public class Zadatak implements Serializable{
     public Zadatak() {
     }
 
-    public Zadatak(int rbZadatka, char odgovor, Karton karton) {
+    public Zadatak(int rbZadatka, char odgovor) {
         this.rbZadatka = rbZadatka;
         this.odgovor = odgovor;
-        this.karton = karton;
+        
     }
 
     

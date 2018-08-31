@@ -28,18 +28,28 @@ public class Karton implements Serializable{
     public Karton() {
     }
 
-    public Karton(int kartonID, int brKartona, String sifraPrijave, double rezultatTesta, int brUnosa, GrupaZadatka grupaZadataka, Kandidat kandidat) {
+    public Karton(int kartonID, int brKartona, String sifraPrijave,  int brUnosa, GrupaZadatka grupaZadataka, Kandidat kandidat) {
         this.kartonID = kartonID;
         this.brKartona = brKartona;
 
         this.sifraPrijave = sifraPrijave;
-        this.rezultatTesta = rezultatTesta;
+       
         this.brUnosa = brUnosa;
         this.grupaZadataka = grupaZadataka;
 
         this.kandidat = kandidat;
     }
+    public Karton(int kartonID, int brKartona, String sifraPrijave,  int brUnosa, GrupaZadatka grupaZadataka) {
+        this.kartonID = kartonID;
+        this.brKartona = brKartona;
 
+        this.sifraPrijave = sifraPrijave;
+       
+        this.brUnosa = brUnosa;
+        this.grupaZadataka = grupaZadataka;
+
+        
+    }
     public void setListaOdg(ArrayList<Zadatak> listaOdg) {
         this.listaOdg = listaOdg;
     }
