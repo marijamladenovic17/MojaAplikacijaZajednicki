@@ -29,4 +29,6 @@ public class Operacije {
      public  static final int VRATI_GRUPU_ZADATKA=17;
      public  static final int SACUVAJ_KARTON=18;
      
+     public  static final int VRATI_KARTON = 19;
+     
 }
