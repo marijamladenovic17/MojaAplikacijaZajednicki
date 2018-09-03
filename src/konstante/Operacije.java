@@ -32,5 +32,7 @@ public class Operacije {
       public  static final int VRATI_KARTON_UNOS_1 = 20;
       public  static final int VRATI_KANDIDATA = 21;
       public  static final int SACUVAJ_KARTON_VERIFIKACIJA = 22;
+      
+      public  static final int IZMENI_ZADATKE = 23;
      
 }
