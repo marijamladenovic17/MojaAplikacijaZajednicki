@@ -34,5 +34,7 @@ public class Operacije {
       public  static final int SACUVAJ_KARTON_VERIFIKACIJA = 22;
       
       public  static final int IZMENI_ZADATKE = 23;
+      public  static final int SPOJ_KARTONE = 24;
+      
      
 }
