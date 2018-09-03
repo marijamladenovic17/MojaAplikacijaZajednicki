@@ -28,7 +28,9 @@ public class Operacije {
      public  static final int VRATI_MAX_ID_KARTONA=16;
      public  static final int VRATI_GRUPU_ZADATKA=17;
      public  static final int SACUVAJ_KARTON=18;
-     
      public  static final int VRATI_KARTON = 19;
+      public  static final int VRATI_KARTON_UNOS_1 = 20;
+      public  static final int VRATI_KANDIDATA = 21;
+      public  static final int SACUVAJ_KARTON_VERIFIKACIJA = 22;
      
 }

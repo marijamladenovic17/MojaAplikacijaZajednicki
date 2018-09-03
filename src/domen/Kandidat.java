@@ -7,6 +7,7 @@ package domen;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -153,4 +154,25 @@ public class Kandidat implements Serializable{
         this.drzevljanstvo = drzevljanstvo;
     }
 
+    
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Kandidat other = (Kandidat) obj;
+        if (!Objects.equals(this.jmbg, other.jmbg)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
 }

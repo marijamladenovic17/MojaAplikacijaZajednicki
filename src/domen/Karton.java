@@ -17,38 +17,35 @@ public class Karton implements Serializable{
 
     private int kartonID;
     private int brKartona;
-    private String sifraPrijave;
     private double rezultatTesta;
     private int brUnosa;
     private GrupaZadatka grupaZadataka;
-    private Test test;
     private Kandidat kandidat;
     ArrayList<Zadatak> listaOdg = new ArrayList<>();
 
     public Karton() {
     }
 
-    public Karton(int kartonID, int brKartona, String sifraPrijave,  int brUnosa, GrupaZadatka grupaZadataka, Kandidat kandidat) {
+    public Karton(int kartonID, int brKartona, int brUnosa, GrupaZadatka grupaZadataka, Kandidat kandidat) {
         this.kartonID = kartonID;
         this.brKartona = brKartona;
-
-        this.sifraPrijave = sifraPrijave;
-       
         this.brUnosa = brUnosa;
         this.grupaZadataka = grupaZadataka;
 
         this.kandidat = kandidat;
     }
-    public Karton(int kartonID, int brKartona, String sifraPrijave,  int brUnosa, GrupaZadatka grupaZadataka) {
+    public Karton(int kartonID, int brKartona,   int brUnosa, GrupaZadatka grupaZadataka) {
         this.kartonID = kartonID;
         this.brKartona = brKartona;
-
-        this.sifraPrijave = sifraPrijave;
        
         this.brUnosa = brUnosa;
         this.grupaZadataka = grupaZadataka;
 
         
+    }
+
+    public Karton(int aInt, int aInt0, Object object, int aInt1, GrupaZadatka gz, Object object0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public void setListaOdg(ArrayList<Zadatak> listaOdg) {
         this.listaOdg = listaOdg;
@@ -58,13 +55,7 @@ public class Karton implements Serializable{
         return listaOdg;
     }
 
-    public Test getTest() {
-        return test;
-    }
-
-    public void setTest(Test test) {
-        this.test = test;
-    }
+   
 
     public int getBrUnosa() {
         return brUnosa;
@@ -90,14 +81,7 @@ public class Karton implements Serializable{
         this.brKartona = brKartona;
     }
 
-    public String getSifraPrijave() {
-        return sifraPrijave;
-    }
-
-    public void setSifraPrijave(String sifraPrijave) {
-        this.sifraPrijave = sifraPrijave;
-    }
-
+   
    
 
     
