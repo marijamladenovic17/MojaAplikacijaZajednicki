@@ -36,5 +36,7 @@ public class Operacije {
       public  static final int IZMENI_ZADATKE = 23;
       public  static final int SPOJ_KARTONE = 24;
       
+      public  static final int VRATI_KARTONE_PROVERA = 25;
+      
      
 }
