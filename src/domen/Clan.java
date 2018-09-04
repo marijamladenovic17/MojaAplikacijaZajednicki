@@ -16,14 +16,26 @@ public class Clan implements Serializable{
     private int clanID;
     private String ime;
     private String prezime;
+    private int komisijaID;
 
     public Clan() {
     }
 
-    public Clan(int clanID, String ime, String prezime) {
+    public Clan(int clanID, String ime, String prezime, int komisijaID) {
         this.clanID = clanID;
         this.ime = ime;
         this.prezime = prezime;
+        this.komisijaID = komisijaID;
+    }
+
+    
+
+    public int getKomisijaID() {
+        return komisijaID;
+    }
+
+    public void setKomisijaID(int komisijaID) {
+        this.komisijaID = komisijaID;
     }
 
     public String getPrezime() {
