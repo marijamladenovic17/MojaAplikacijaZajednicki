@@ -28,6 +28,7 @@ public class Kandidat implements Serializable{
     private ZanimanjeRoditelja zanimanjeRoditelja;
     private Drzevljanstvo drzevljanstvo;
     private List<Karton> listaKartona;
+    private int ukupanBrojPoena;
 
     public Kandidat() {
     }
@@ -153,6 +154,16 @@ public class Kandidat implements Serializable{
     public void setDrzevljanstvo(Drzevljanstvo drzevljanstvo) {
         this.drzevljanstvo = drzevljanstvo;
     }
+
+    public int getUkupanBrojPoena() {
+        return ukupanBrojPoena;
+    }
+
+    public void setUkupanBrojPoena(int ukupanBrojPoena) {
+        this.ukupanBrojPoena = ukupanBrojPoena;
+    }
+    
+    
 
     
 
