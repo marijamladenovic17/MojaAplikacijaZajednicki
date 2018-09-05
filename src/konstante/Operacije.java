@@ -39,5 +39,6 @@ public class Operacije {
       public  static final int VRATI_KARTONE_PROVERA = 25;
       public  static final int IZRACUNAJ_POENE = 26;
       
+      public  static final int NAPRAVI_RANG_LISTU = 27;
      
 }

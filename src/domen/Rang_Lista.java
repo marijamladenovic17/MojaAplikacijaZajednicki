@@ -6,6 +6,7 @@
 package domen;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,18 +14,22 @@ import java.io.Serializable;
  */
 public class Rang_Lista implements Serializable{
     
+    ArrayList<Stavka_Rang_Liste> stavke;
+    
     private String sifraRL;
-    private String smer;
     private int godina;
 
     public Rang_Lista() {
+        stavke = new ArrayList<>();
     }
 
-    public Rang_Lista(String sifraRL, String smer, int godina) {
+    public Rang_Lista(String sifraRL, int godina) {
         this.sifraRL = sifraRL;
-        this.smer = smer;
         this.godina = godina;
     }
+    
+    
+
 
     public int getGodina() {
         return godina;
@@ -42,13 +47,14 @@ public class Rang_Lista implements Serializable{
         this.sifraRL = sifraRL;
     }
 
-    public String getSmer() {
-        return smer;
+    public ArrayList<Stavka_Rang_Liste> getStavke() {
+        return stavke;
     }
 
-    public void setSmer(String smer) {
-        this.smer = smer;
+    public void setStavke(ArrayList<Stavka_Rang_Liste> stavke) {
+        this.stavke = stavke;
     }
+
     
     
     

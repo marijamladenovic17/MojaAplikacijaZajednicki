@@ -13,16 +13,21 @@ import java.io.Serializable;
  */
 public class Stavka_Rang_Liste implements Serializable{
     
-    private Rang_Lista rang_lista;
+    
     private int redniBroj;
+    private Kandidat kandidat;
 
     public Stavka_Rang_Liste() {
     }
 
-    public Stavka_Rang_Liste(Rang_Lista rang_lista, int redniBroj) {
-        this.rang_lista = rang_lista;
+    public Stavka_Rang_Liste(int redniBroj, Kandidat kandidat) {
         this.redniBroj = redniBroj;
+        this.kandidat = kandidat;
     }
+
+    
+    
+
 
     public int getRedniBroj() {
         return redniBroj;
@@ -32,12 +37,13 @@ public class Stavka_Rang_Liste implements Serializable{
         this.redniBroj = redniBroj;
     }
 
-    public Rang_Lista getRang_lista() {
-        return rang_lista;
+
+    public Kandidat getKandidat() {
+        return kandidat;
     }
 
-    public void setRang_lista(Rang_Lista rang_lista) {
-        this.rang_lista = rang_lista;
+    public void setKandidat(Kandidat kandidat) {
+        this.kandidat = kandidat;
     }
     
     
