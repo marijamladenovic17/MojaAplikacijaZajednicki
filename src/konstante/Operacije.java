@@ -40,5 +40,6 @@ public class Operacije {
       public  static final int IZRACUNAJ_POENE = 26;
       
       public  static final int NAPRAVI_RANG_LISTU = 27;
+      public  static final int NADJI_PRIJAVLJENOG = 28;
      
 }
