@@ -28,12 +28,15 @@ public class Kandidat implements Serializable{
     private ZanimanjeRoditelja zanimanjeRoditelja;
     private Drzevljanstvo drzevljanstvo;
     private List<Karton> listaKartona;
+    private String email;
+    private double brBodovaIzSkole;
+    private int smer;
     private int ukupanBrojPoena;
 
     public Kandidat() {
     }
 
-    public Kandidat(String sifraPrijave, String jmbg, String ime, String imeRoditelja, String pol, String prezime, String mobilni, String fiksni, SrednjaSkola srednjaSkola, Nacionalnost nacionalnost, ZanimanjeRoditelja zanimanjeRoditelja, Drzevljanstvo drzevljanstvo) {
+    public Kandidat(String sifraPrijave, String jmbg, String ime, String imeRoditelja, String pol, String prezime, String mobilni, String fiksni, SrednjaSkola srednjaSkola, Nacionalnost nacionalnost, ZanimanjeRoditelja zanimanjeRoditelja, Drzevljanstvo drzevljanstvo, String email, double brBodovaIzSkole, int smer) {
         this.sifraPrijave = sifraPrijave;
         this.jmbg = jmbg;
         this.ime = ime;
@@ -46,8 +49,13 @@ public class Kandidat implements Serializable{
         this.nacionalnost = nacionalnost;
         this.zanimanjeRoditelja = zanimanjeRoditelja;
         this.drzevljanstvo = drzevljanstvo;
-
+        this.email = email;
+        this.brBodovaIzSkole = brBodovaIzSkole;
+        this.smer = smer;
+     
     }
+
+    
 
     public void setPol(String pol) {
         this.pol = pol;
@@ -183,6 +191,30 @@ public class Kandidat implements Serializable{
             return false;
         }
         return true;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public double getBrBodovaIzSkole() {
+        return brBodovaIzSkole;
+    }
+
+    public void setBrBodovaIzSkole(double brBodovaIzSkole) {
+        this.brBodovaIzSkole = brBodovaIzSkole;
+    }
+
+    public int getSmer() {
+        return smer;
+    }
+
+    public void setSmer(int smer) {
+        this.smer = smer;
     }
     
     
