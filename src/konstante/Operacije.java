@@ -41,5 +41,9 @@ public class Operacije {
       
       public  static final int NAPRAVI_RANG_LISTU = 27;
       public  static final int NADJI_PRIJAVLJENOG = 28;
+      
+      public  static final int KREIRAJ_RL_ISIT = 29;
+      public  static final int KREIRAJ_RL_MEN = 30;
+      public  static final int KREIRAJ_RL_ISIT_DALJ = 31;
      
 }

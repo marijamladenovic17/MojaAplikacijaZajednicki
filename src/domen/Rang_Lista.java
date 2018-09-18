@@ -16,15 +16,15 @@ public class Rang_Lista implements Serializable{
     
     ArrayList<Stavka_Rang_Liste> stavke;
     
-    private String sifraRL;
+    private String smer;
     private int godina;
 
     public Rang_Lista() {
         stavke = new ArrayList<>();
     }
 
-    public Rang_Lista(String sifraRL, int godina) {
-        this.sifraRL = sifraRL;
+    public Rang_Lista(String smer, int godina) {
+        this.smer = smer;
         this.godina = godina;
     }
     
@@ -39,12 +39,12 @@ public class Rang_Lista implements Serializable{
         this.godina = godina;
     }
 
-    public String getSifraRL() {
-        return sifraRL;
+    public String getSmer() {
+        return smer;
     }
 
-    public void setSifraRL(String sifraRL) {
-        this.sifraRL = sifraRL;
+    public void setSmer(String smer) {
+        this.smer = smer;
     }
 
     public ArrayList<Stavka_Rang_Liste> getStavke() {

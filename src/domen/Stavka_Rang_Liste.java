@@ -16,6 +16,7 @@ public class Stavka_Rang_Liste implements Serializable{
     
     private int redniBroj;
     private Kandidat kandidat;
+    private double brojPoena;
 
     public Stavka_Rang_Liste() {
     }
@@ -23,6 +24,14 @@ public class Stavka_Rang_Liste implements Serializable{
     public Stavka_Rang_Liste(int redniBroj, Kandidat kandidat) {
         this.redniBroj = redniBroj;
         this.kandidat = kandidat;
+    }
+
+    public void setBrojPoena(double brojPoena) {
+        this.brojPoena = brojPoena;
+    }
+
+    public double getBrojPoena() {
+        return brojPoena;
     }
 
     
