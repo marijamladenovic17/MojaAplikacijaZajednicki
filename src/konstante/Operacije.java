@@ -45,5 +45,9 @@ public class Operacije {
       public  static final int KREIRAJ_RL_ISIT = 29;
       public  static final int KREIRAJ_RL_MEN = 30;
       public  static final int KREIRAJ_RL_ISIT_DALJ = 31;
+      public  static final int SACUVAJ_OBAVESTENJA = 32;
+      
+      
+      public  static final int VRATI_RANG_LISTU = 33;
      
 }
